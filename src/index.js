@@ -3,6 +3,7 @@ import mongoose from "mongoose";
 import * as dotenv from "dotenv";
 dotenv.config();
 import productRoute from "./routes/product.route";
+import adminRoute from "./routes/adminKey.route";
 import cors from "cors";
 
 const port = 4000;
@@ -27,6 +28,9 @@ app.use((req, res, next) => {
 
 // PRODUCTS
 app.use("/products", productRoute);
+
+//
+app.use("/admin", adminRoute);
 
 ///////////////////////////////////////////////////// Starting ///////////////////////////////////////////////////////////
 
