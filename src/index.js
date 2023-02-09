@@ -4,6 +4,8 @@ import * as dotenv from "dotenv";
 dotenv.config();
 import productRoute from "./routes/product.route";
 import adminRoute from "./routes/adminKey.route";
+import orderRoute from "./routes/order.route";
+
 import cors from "cors";
 
 const port = 4000;
@@ -31,6 +33,7 @@ app.use("/products", productRoute);
 
 //
 app.use("/admin", adminRoute);
+app.use("/orders", orderRoute);
 
 ///////////////////////////////////////////////////// Starting ///////////////////////////////////////////////////////////
 

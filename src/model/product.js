@@ -1,13 +1,6 @@
 import mongoose from "mongoose";
+import roomSchema from "./roomschema";
 
-const roomSchema = new mongoose.Schema({
-  title: String,
-  description: String,
-  imageUrl: String,
-  price: Number,
-  size: String,
-  bed: String,
-});
 
 // Conver "_id" to "id"
 roomSchema.set("toJSON", {

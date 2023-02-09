@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
+    "seed": "nodemon src/seedAdmin.js",
     "prod": "node src/index.js"
   },
   "keywords": [],
